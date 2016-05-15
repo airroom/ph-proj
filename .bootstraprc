@@ -21,11 +21,11 @@ styleLoaders:
 # This param can also be set in webpack config:
 #   entry: 'bootstrap-loader/extractStyles'
 extractStyles: false
-# env:
-#   development:
-#     extractStyles: false
-#   production:
-#     extractStyles: true
+env:
+  development:
+    extractStyles: false
+  production:
+    extractStyles: true
 
 # Customize Bootstrap variables that get imported before the original Bootstrap variables.
 # Thus original Bootstrap variables can depend on values from here. All the bootstrap
@@ -50,12 +50,12 @@ extractStyles: false
 # this in bootstrapCustomizations to make the input height 10% bigger than the default calculation.
 # Thus you can leverage the default calculations.
 # $input-height: $input-height * 1.10;
-# bootstrapCustomizations: ./app/styles/bootstrap/customizations.scss
+bootstrapCustomizations: ./src/theme/variables.scss
 
 # Import your custom styles here. You have access to all the bootstrap variables. If you require
 # your sass files separately, you will not have access to the bootstrap variables, mixins, clases, etc.
 # Usually this endpoint-file contains list of @imports of your application styles.
-appStyles: ./src/theme/app.scss
+# appStyles: ./src/theme/app.scss
 
 ### Bootstrap styles
 styles:
@@ -99,10 +99,10 @@ styles:
   close: true
 
   # Components w/ JavaScript
-  modal: true
-  tooltip: true
-  popover: true
-  carousel: true
+  modal: false
+  tooltip: false
+  popover: false
+  carousel: false
 
   # Utility classes
   utilities: true

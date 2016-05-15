@@ -1,2 +1,1 @@
-export AppHeader from './AppHeader/AppHeader';
-export SvgImg from './SvgImg/SvgImg';
+export SvgImg from './SvgImg/SvgImg.js';

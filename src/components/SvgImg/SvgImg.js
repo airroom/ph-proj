@@ -1,20 +1,15 @@
 import React, { Component, PropTypes } from 'react';
 
-export default class Icon extends Component {
+export default class SvgImg extends Component {
   static propTypes = {
-    path: PropTypes.string.isRequired
+    name: PropTypes.string.isRequired
   };
   constructor(props) {
     super(props);
-    this.state = {
-      img: require(`assets/svgs/${props.path}.svg`) || null
-    };
   }
   render() {
     return (
-      <svg>
-        <use xlinkHref={this.state.img}></use>
-      </svg>
+      <img src={require('../../../static/svg/logo.svg')} />
     );
   }
 }
