@@ -1,1 +1,1 @@
-export SvgImg from './SvgImg/SvgImg.js';
+export CollectionList from './CollectionList/CollectionList.js';

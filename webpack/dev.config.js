@@ -103,6 +103,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.IgnorePlugin(/webpack-stats\.json$/),
     new webpack.DefinePlugin({
+      API_TOKEN: JSON.stringify(process.env.API_TOKEN),
       __CLIENT__: true,
       __SERVER__: false,
       __DEVELOPMENT__: true,

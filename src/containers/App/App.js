@@ -11,9 +11,9 @@ export default class App extends Component {
   };
   renderHeader() {
     return (
-      <nav className={`navbar ${styles['app-header']}`}>
+      <nav className={`navbar m-b-2 ${styles['app-header']}`}>
         <div className="container">
-          <IndexLink to="/" className="navbar-brand">
+          <IndexLink to="/" className="navbar-brand" title="Home">
             <img src={require('../../../static/svg/logo.svg')} />
           </IndexLink>
         </div>
@@ -23,7 +23,7 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <Helmet {...config.app.head} />
+        <Helmet {...config.app.head}/>
         {this.renderHeader()}
         {this.props.children}
       </div>

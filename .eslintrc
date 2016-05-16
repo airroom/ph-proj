@@ -28,6 +28,7 @@
     }
   },
   "globals": {
+    "API_TOKEN": true,
     "__DEVELOPMENT__": true,
     "__CLIENT__": true,
     "__SERVER__": true,

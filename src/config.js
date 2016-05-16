@@ -12,15 +12,12 @@ const environment = {
 module.exports = Object.assign({
   host: process.env.HOST || 'localhost',
   port: process.env.PORT,
-  apiHost: process.env.APIHOST || 'localhost',
-  apiPort: process.env.APIPORT,
+  apiHost: 'api.producthunt.com/v1',
   app: {
-    title: 'PH Proj',
+    title: 'Ph Proj',
     description: '',
     head: {
-      titleTemplate: '',
-      meta: []
+      titleTemplate: '%s | Ph Proj'
     }
-  },
-
+  }
 }, environment);
